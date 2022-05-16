@@ -13,7 +13,7 @@
   </head>
   <body>
     <div class="header">
-      <nav>
+      <nav id="nav-bar">
         <img src="/images/logo.png" class="logo" />
         <ul class="nav-links">
           <li><a href="#" class="active">Popular Places</a></li>
@@ -21,6 +21,7 @@
           <li><a href="#">Online Packages</a></li>
         </ul>
         <a href="#" class="register-btn">Register Now</a>
+        <i class="fas fa-bars" onclick="togglebtn()"></i>
       </nav>
       <div class="container">
         <h1>Find Your Next Stay</h1>
@@ -185,5 +186,11 @@
         <p>Copyright 2022 Hassan Saber.</p>
       </div>
     </div>
+    <script>
+      var navBar = document.getElementById("nav-bar");
+      function togglebtn() {
+        navBar.classList.toggle("hidemenu");
+      }
+    </script>
   </body>
 </html>
